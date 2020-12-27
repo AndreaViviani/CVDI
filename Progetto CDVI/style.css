@@ -253,7 +253,7 @@ button:focus {
   color: #8183c3;
 }
 
-.purple-link{
+.purple-link {
   color: #8183c3;
   text-decoration: underline;
 }
@@ -320,7 +320,7 @@ button:focus {
   }
 
   .nodisplay-s {
-    display: none;
+    display: none !important;
   }
 
   .only-mobile-display {
@@ -765,7 +765,6 @@ div.dropdown-menu a {
 /*Media Queries home mobile*/
 
 @media screen and (max-width: 576px) {
-
   /*su mobile tolgo il padding ai container per avere più spazio*/
   .container {
     padding-left: 0;
@@ -1282,6 +1281,172 @@ userrremo le stesse classi dove possibile:*/
   grid-row: 2/3;
 }
 
+/*Facciamo ora la seconda sezione, quella dell'astronauta*/
+
+#eventi-second{
+  padding:3rem 0;
+  position:relative;
+}
+
+.astronauta-archivio{
+  position:absolute; 
+  z-index: -1;
+}
+
+.event-passed-divtext{
+  background-color: #151515;
+  padding:4rem;
+  margin:150px 0 200px 0;
+}
+
+.event-passed-divtext p{
+  padding:3rem 0 2rem 0;
+
+}
+
+/*passiamo adesso alla sezione infondo quella della gallery*/
+
+#gallery-snippet {
+  background: url("img/chi-siamo_img/luna-background.jpg") no-repeat;
+  padding: 5rem 0 8rem 0;
+}
+
+.gallery-div {
+  background: url("img/archivio-img/snippet-gallery.png") no-repeat;
+  padding: 9rem 0 3rem 8rem;
+}
+.gallery-div p {
+  padding: 2rem 0;
+}
+
+/*tablet media query archivio*/
+
+@media screen and (max-width: 992px) {
+  .years-overlay {
+    position: absolute;
+    z-index: 2;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(16, 16, 16, 0.6);
+  }
+
+  .my-grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  .year-textbox {
+    padding: 2rem 4rem 2rem 2rem;
+  }
+  #eventi-first .container .col-lg-3 {
+    top: 0;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+
+  .astronauta-archivio{
+    left:15px;
+    width:calc(100% - 30px);
+  }
+  .event-passed-divtext{
+    background-color: #151515;
+    padding:3rem;
+    margin:200px 50px 150px 50px;
+  }
+
+  #gallery-snippet {
+    background: none;
+    padding: 6rem 15px;
+  }
+  /*Inoltre il contenuto di statuto-div è più centrato*/
+
+  .gallery-div {
+    padding: 5rem 0 5rem 3rem;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .mobile-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .year1-mobile {
+    width: calc(100vw - 30px);
+    margin: 20px 0;
+    background: url("img/archivio-img/pianeti1.png") no-repeat;
+    background-size: contain;
+    height: calc(100vw - 30px);
+  }
+  .year2-mobile {
+    width: calc(100vw - 30px);
+    margin: 20px 0;
+    background: url("img/archivio-img/pianeti2.png") no-repeat;
+    background-size: contain;
+    height: calc(100vw - 30px);
+  }
+  .year3-mobile {
+    width: calc(100vw - 30px);
+    margin: 20px 0;
+    background: url("img/archivio-img/pianeti3.png") no-repeat;
+    background-size: contain;
+    height: calc(100vw - 30px);
+  }
+  .year4-mobile {
+    width: calc(100vw - 30px);
+    margin:20px 0;
+    background: url("img/archivio-img/pianeti4.png") no-repeat;
+    background-size: contain;
+    height: calc(100vw - 30px);
+  }
+  .year5-mobile {
+    width: calc(100vw - 30px);
+    margin: 20px 0;
+    background: url("img/archivio-img/pianeti5.png") no-repeat;
+    background-size: contain;
+    height: calc(100vw - 30px);
+  }
+  .year6-mobile {
+    width: calc(100vw - 30px);
+    margin:20px 0;
+    background: url("img/archivio-img/pianeti6.png") no-repeat;
+    background-size: contain;
+    height: calc(100vw - 30px);
+  }
+
+  .years-overlay{
+    width:calc(100vw - 30px);
+    height: calc(100vw - 30px);
+  }
+  .year-textbox {
+    padding-top:180px;
+  }
+
+  .event-passed-divtext{
+    background-color: #151515;
+    padding:2rem;
+    margin:0 0 0 0 ;
+  }
+
+  .event-passed-divtext p{
+    padding:2rem 0 1.5rem 0;
+  
+  }
+
+  .gallery-div {
+    padding: 2rem 15px 2rem 15px;
+  }
+
+  /*in realtà ora che vedo vanno sistemati anche i padding di statuto*/
+  #gallery-snippet {
+    padding: 3rem 15px;
+  }
+
+}
+
 /*Pagina CONTATTI*/
 
 #header-contatti .container {
@@ -1429,12 +1594,10 @@ userrremo le stesse classi dove possibile:*/
   padding: 6em 0 3em 0;
 }
 
-
 #how-socio-section > p {
   width: 40%;
   padding: 2rem 0;
 }
-
 
 .step-container {
   display: flex;
@@ -1460,7 +1623,7 @@ userrremo le stesse classi dove possibile:*/
   background-color: #151515;
 }
 
-.step-snippet{
+.step-snippet {
   font-size: 20px;
 }
 
@@ -1477,21 +1640,20 @@ userrremo le stesse classi dove possibile:*/
 /*HOW-RINNOVARE-SECTION*/
 
 #how-rinnovare-section {
-  padding:10rem 0 3rem 0;
+  padding: 10rem 0 3rem 0;
 }
 
-.rinnovo-nebulosa{
-  position:absolute;  
+.rinnovo-nebulosa {
+  position: absolute;
   z-index: -1;
-
 }
 
 .rinnovo-text {
-  padding:180px 0 220px 0;
+  padding: 180px 0 220px 0;
 }
 
-.rinnovo-text p{
-  padding:2em 0;
+.rinnovo-text p {
+  padding: 2em 0;
 }
 
 /*Payment section*/
@@ -1502,7 +1664,8 @@ userrremo le stesse classi dove possibile:*/
 }
 
 .payment-div {
-  background: url("img/diventa-socio_img/meotodo-pagamento-aurora.jpg") no-repeat;
+  background: url("img/diventa-socio_img/meotodo-pagamento-aurora.jpg")
+    no-repeat;
   padding: 3rem 0 3rem 8rem;
 }
 .payment-div p {
@@ -1523,12 +1686,11 @@ userrremo le stesse classi dove possibile:*/
     width: 100%;
   }
 
-
   #tipologie-socio {
     background: none;
     padding: 3rem 0 3rem 0;
   }
-  
+
   #tipologie-socio > .container > p {
     width: 100%;
     padding: 15px;
@@ -1536,25 +1698,25 @@ userrremo le stesse classi dove possibile:*/
 
   /*come diventare socio*/
 
-  #how-socio-section{
-    padding:15px;
+  #how-socio-section {
+    padding: 15px;
   }
 
-  #how-socio-section > p{
-    width:100%;
+  #how-socio-section > p {
+    width: 100%;
   }
 
-  .how-socio-img{
-    left:0;
+  .how-socio-img {
+    left: 0;
   }
 
-  .big-number{
-    font-size:8rem;
+  .big-number {
+    font-size: 8rem;
   }
 
-  .step-snippet{
-    left:0.5rem;
-    top:0;
+  .step-snippet {
+    left: 0.5rem;
+    top: 0;
   }
 
   #payment-section {
@@ -1563,7 +1725,7 @@ userrremo le stesse classi dove possibile:*/
   }
   /*come rinnovare*/
   .rinnovo-text {
-    padding:0 0 0 0;
+    padding: 0 0 0 0;
   }
 
   .payment-div {
@@ -1571,7 +1733,7 @@ userrremo le stesse classi dove possibile:*/
   }
 
   #how-rinnovare-section {
-    padding:6rem 0 0rem 0;
+    padding: 6rem 0 0rem 0;
   }
 }
 
@@ -1585,32 +1747,31 @@ userrremo le stesse classi dove possibile:*/
     top: 0;
     padding: 2rem 15px 2rem 15px;
   }
-  .big-number{
+  .big-number {
     display: block;
-    position:relative;
+    position: relative;
     line-height: 1rem !important;
     left: 0 !important;
-    bottom:0.5rem;
+    bottom: 0.5rem;
   }
 
-  .step-container{
-    padding:0;
+  .step-container {
+    padding: 0;
   }
 
-  .step-snippet{
-    left:0;
-    padding:2.5rem 1rem;
-    font-size:16px;
+  .step-snippet {
+    left: 0;
+    padding: 2.5rem 1rem;
+    font-size: 16px;
   }
 
   #how-rinnovare-section {
-    padding:2rem 0 0rem 0;
+    padding: 2rem 0 0rem 0;
   }
 
   .payment-div {
     padding: 2rem 15px 2rem 15px;
   }
-
 
   /*in realtà ora che vedo vanno sistemati anche i padding di statuto*/
   #payment-section {
