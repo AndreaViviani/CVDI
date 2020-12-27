@@ -24,7 +24,8 @@
 <body class="dark-bkgr">
     <header>
         <nav id="navbar" class="navbar navbar-expand-lg">
-            <a class="navbar-brand"><img src="img/loghi/onlylogo.png"><img class="nodisplay" src="img/loghi/onlylogo-white.png"></img></a>
+            <a class="navbar-brand"><img src="img/loghi/onlylogo.png"><img class="nodisplay"
+                    src="img/loghi/onlylogo-white.png"></img></a>
             <button class="navbar-toggler" id="collapse-button" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -91,10 +92,10 @@
             <div class="container row">
 
                 <div class="col-lg-3">
-                    <h2><span class="green-span">Eventi <br /> 2015-2020</span></h2>
+                    <h2><span class="green-span">Eventi <br class="nodisplay-m" /> 2015-2020</span></h2>
                 </div>
                 <div class="col-lg-9">
-                    <div class="row my-grid-container">
+                    <div class="row my-grid-container nodisplay-s">
                         <div class="year1">
                             <div class="years-overlay">
 
@@ -151,8 +152,92 @@
                         </div>
 
                     </div>
+                    <div class="mobile-grid only-mobile-display">
+                        <div class="year1-mobile">
+                            <div class="years-overlay">
+
+                            </div>
+                            <div class="year-textbox">
+                                <h2><span class="white-span">2020</span></h2>
+                                <p class="click-here-event">Clicca per scoprire gli eventi</p>
+                            </div>
+                        </div>
+                        <div class="year2-mobile">
+                            <div class="years-overlay">
+
+                            </div>
+                            <div class="year-textbox">
+                                <h2><span class="white-span">2019</span></h2>
+                                <p class="click-here-event">Clicca per scoprire gli eventi</p>
+                            </div>
+                        </div>
+                        <div class="year3-mobile">
+                            <div class="years-overlay">
+
+                            </div>
+                            <div class="year-textbox">
+                                <h2><span class="white-span">2018</span></h2>
+                                <p class="click-here-event">Clicca per scoprire gli eventi</p>
+                            </div>
+                        </div>
+                        <div class="year4-mobile">
+                            <div class="years-overlay">
+
+                            </div>
+                            <div class="year-textbox">
+                                <h2><span class="white-span">2017</span></h2>
+                                <p class="click-here-event">Clicca per scoprire gli eventi</p>
+                            </div>
+                        </div>
+                        <div class="year5-mobile">
+                            <div class="years-overlay">
+
+                            </div>
+                            <div class="year-textbox">
+                                <h2><span class="white-span">2016</span></h2>
+                                <p class="click-here-event">Clicca per scoprire gli eventi</p>
+                            </div>
+                        </div>
+                        <div class="year6-mobile">
+                            <div class="years-overlay">
+
+                            </div>
+                            <div class="year-textbox">
+                                <h2><span class="white-span">2015</span></h2>
+                                <p class="click-here-event">Clicca per scoprire gli eventi</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+            </div>
+        </section>
+        <section id="eventi-second" class="container">
+            <img src="img/archivio-img/astronauta-archivio.jpg" class="astronauta-archivio nodisplay-s" />
+            <div class="row">
+                <div class="col-lg-5">
+
+                </div>
+                <div class="col-lg-7">
+                    <div class="event-passed-divtext centered-text-s">
+                        <h3>Eventi <br /> 2014 - 1997</h3>
+                        <p>Astrosaf non dimentica gli eventi passati! Per questo ha raccolto in un file l'intera lista
+                            di eventi targati Astrosaf dal 1997 al 2014.
+                        </p>
+                        <button class="main-button">PDF</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="gallery-snippet">
+            <div class="container gallery-div">
+                <div class="col-lg-4 col-sm-8 centered-text-s">
+                    <h2> <span class="white-span">Scopri la gallery</span> </h2>
+                    <p>Visita la gallery per scoprire le foto degli ultimi eventi dell'associazione
+                    </p>
+                    <button class="main-button">Gallery</button>
+                </div>
             </div>
         </section>
     </main>
@@ -216,7 +301,7 @@
 
 
 
-        jQuery(document).ready(function ($) {      
+        jQuery(document).ready(function ($) {
 
 
             var myDropdown = document.getElementById('navbarSupportedContent');
