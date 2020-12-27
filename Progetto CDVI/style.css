@@ -1777,10 +1777,9 @@ img.arrow-news {
   }
 }
 /*INIZIO GALLERY*/
-#startingsection {
+.startingsection {
   width: 100vw;
-  min-height: 70vh;
-  position: relative;
+  min-height: 60vh;
 }
 .rowgallery {
   display: flex;
@@ -1803,16 +1802,24 @@ img.arrow-news {
 }
 
 @media screen and (max-width: 800px) {
-  .column {
+  .columngallery {
     flex: 50%;
     max-width: 50%;
+  }
+  .rowgallery {
+    position: relative;
+
   }
 }
 
 @media screen and (max-width: 600px) {
-  .column {
+  .columngallery {
     flex: 100%;
     max-width: 100%;
+  }
+  .rowgallery {
+    position: relative;
+    margin-top: 160px;
   }
 }
 
