@@ -140,6 +140,36 @@ body {
   font-size: 16px;
 }
 
+@media only screen and (max-width: 1860px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1485px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 div,
 p,
 h1,
@@ -191,6 +221,7 @@ h4 {
 
 p {
   color: white;
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 
@@ -317,6 +348,10 @@ button:focus {
 
   .centered-text-s {
     text-align: center !important;
+  }
+
+  .centered-element-s {
+    align-content: center !important;
   }
 
   .nodisplay-s {
@@ -527,6 +562,7 @@ div.dropdown-menu a {
 #joinus-section-home {
   background: url("img/index_img/eventi-home.jpg") no-repeat right;
   min-height: 80vh;
+  background-size: 100%;
 }
 
 /*creo una classe per il box di testo e gestisco i suoi figli*/
@@ -669,8 +705,13 @@ div.dropdown-menu a {
   background-size: cover;
 }
 
+.help-img{
+  height: 43rem;
+  width:43rem;
+}
+
 .helpus-overlay {
-  height: 70vh;
+  height: 49rem;
   width: 100vw;
   background-color: rgba(16, 16, 16, 0.5);
   position: absolute;
@@ -730,19 +771,19 @@ div.dropdown-menu a {
 
   .list {
     left: 0;
-    height: 550px;
+    height: 600px;
   }
 
   .list li.act {
     display: block;
     width: calc(100vw - 2rem);
-    height: 550px;
+    height: 600px;
     left: 0;
     margin: 0 1rem;
   }
 
   .carousel-container {
-    height: 550px;
+    height: 600px;
   }
 
   /*voglio anche cambiare i padding della textbox di helpus section*/
@@ -897,7 +938,8 @@ userrremo le stesse classi dove possibile:*/
 
 .img-what {
   position: absolute;
-  width: 58%;
+  width: 55rem;
+  height: 50rem;
 }
 
 .img-what img {
@@ -1213,25 +1255,25 @@ userrremo le stesse classi dove possibile:*/
   position: relative;
 }
 
-/*purtroppo qua ho dovuto creare 6 classi di overlay per far triggerare correttamente l'hover. con lo stesso nome veniva tutto un po buggato*/
+
 .years-overlay {
   position: absolute;
   z-index: 2;
-  width: 335px;
-  height: 335px;
+  width: 21rem;
+  height: 21rem;
   background-color: rgba(16, 16, 16, 0.6);
 }
 
 .my-grid-container {
   display: grid;
-  grid-template-columns: 335px 335px 335px;
-  grid-template-rows: 335px 335px;
+  grid-template-columns: 21rem 21rem 21rem;
+  grid-template-rows: 21rem 21rem;
   column-gap: 2rem;
   row-gap: 2rem;
 }
 
 .year-textbox {
-  padding: 180px 4rem 2rem 2rem;
+  padding: 11.25rem 4rem 2rem 2rem;
 }
 
 .click-here-event {
@@ -1283,25 +1325,26 @@ userrremo le stesse classi dove possibile:*/
 
 /*Facciamo ora la seconda sezione, quella dell'astronauta*/
 
-#eventi-second{
-  padding:3rem 0;
-  position:relative;
+#eventi-second {
+  padding: 3rem 0;
+  position: relative;
 }
 
-.astronauta-archivio{
-  position:absolute; 
+.astronauta-archivio {
+  position: absolute;
   z-index: -1;
+  width:50rem;
+  height: 50rem;
 }
 
-.event-passed-divtext{
+.event-passed-divtext {
   background-color: #151515;
-  padding:4rem;
-  margin:150px 0 200px 0;
+  padding: 4rem;
+  margin: 150px 0 200px 0;
 }
 
-.event-passed-divtext p{
-  padding:3rem 0 2rem 0;
-
+.event-passed-divtext p {
+  padding: 3rem 0 2rem 0;
 }
 
 /*passiamo adesso alla sezione infondo quella della gallery*/
@@ -1347,14 +1390,14 @@ userrremo le stesse classi dove possibile:*/
     text-align: center;
   }
 
-  .astronauta-archivio{
-    left:15px;
-    width:calc(100% - 30px);
+  .astronauta-archivio {
+    left: 15px;
+    width: calc(100% - 30px);
   }
-  .event-passed-divtext{
+  .event-passed-divtext {
     background-color: #151515;
-    padding:3rem;
-    margin:200px 50px 150px 50px;
+    padding: 3rem;
+    margin: 200px 50px 150px 50px;
   }
 
   #gallery-snippet {
@@ -1366,7 +1409,6 @@ userrremo le stesse classi dove possibile:*/
   .gallery-div {
     padding: 5rem 0 5rem 3rem;
   }
-
 }
 
 @media screen and (max-width: 576px) {
@@ -1397,7 +1439,7 @@ userrremo le stesse classi dove possibile:*/
   }
   .year4-mobile {
     width: calc(100vw - 30px);
-    margin:20px 0;
+    margin: 20px 0;
     background: url("img/archivio-img/pianeti4.png") no-repeat;
     background-size: contain;
     height: calc(100vw - 30px);
@@ -1411,29 +1453,28 @@ userrremo le stesse classi dove possibile:*/
   }
   .year6-mobile {
     width: calc(100vw - 30px);
-    margin:20px 0;
+    margin: 20px 0;
     background: url("img/archivio-img/pianeti6.png") no-repeat;
     background-size: contain;
     height: calc(100vw - 30px);
   }
 
-  .years-overlay{
-    width:calc(100vw - 30px);
+  .years-overlay {
+    width: calc(100vw - 30px);
     height: calc(100vw - 30px);
   }
   .year-textbox {
-    padding-top:180px;
+    padding-top: 180px;
   }
 
-  .event-passed-divtext{
+  .event-passed-divtext {
     background-color: #151515;
-    padding:2rem;
-    margin:0 0 0 0 ;
+    padding: 2rem;
+    margin: 0 0 0 0;
   }
 
-  .event-passed-divtext p{
-    padding:2rem 0 1.5rem 0;
-  
+  .event-passed-divtext p {
+    padding: 2rem 0 1.5rem 0;
   }
 
   .gallery-div {
@@ -1444,7 +1485,6 @@ userrremo le stesse classi dove possibile:*/
   #gallery-snippet {
     padding: 3rem 15px;
   }
-
 }
 
 /*Pagina CONTATTI*/
@@ -1609,6 +1649,8 @@ userrremo le stesse classi dove possibile:*/
   position: absolute;
   left: 50%;
   z-index: -1;
+  width:52rem;
+  height:42.5;
 }
 
 .step-container > div {
@@ -1624,7 +1666,7 @@ userrremo le stesse classi dove possibile:*/
 }
 
 .step-snippet {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .big-number {
@@ -1646,10 +1688,12 @@ userrremo le stesse classi dove possibile:*/
 .rinnovo-nebulosa {
   position: absolute;
   z-index: -1;
+  width:50rem;
+  height:37.5rem;
 }
 
 .rinnovo-text {
-  padding: 180px 0 220px 0;
+  padding: 11.25rem 0 13.75rem 0;
 }
 
 .rinnovo-text p {
@@ -1776,6 +1820,133 @@ userrremo le stesse classi dove possibile:*/
   /*in realtà ora che vedo vanno sistemati anche i padding di statuto*/
   #payment-section {
     padding: 3rem 15px;
+  }
+}
+
+/*IL CORSO DI ASTRONOMIA*/
+#header-il-corso {
+  background: url("img/corso_img/Headercorso.jpg") no-repeat;
+  width: 100vw;
+  height: 80vh;
+}
+
+.il-corso-header-textbox p {
+  padding-top: 2rem;
+}
+
+#corso-argoments-section {
+  padding: 3em 0 3em 0;
+  background: url("img/corso_img/Argomenti.jpg") no-repeat;
+  background-position: top;
+  max-width: 100vw !important;
+}
+
+#corso-argoments-section > p {
+  width: 40%;
+  padding: 2rem 0;
+}
+
+#corso-number-box {
+  padding: 3rem 0;
+  position: relative;
+}
+
+.step-snippet-corso {
+  position: relative;
+  left: 2rem;
+  top: 1rem;
+  padding: 2em;
+  background-color: #151515;
+  margin-right: 3.1rem;
+  padding-left: 2.75rem;
+}
+
+.step-snippet-corso {
+  font-size: 1.25rem;
+}
+
+#form-corso-section {
+  padding-bottom: 6rem;
+  position: relative;
+}
+
+#corso-iscrizione-section {
+  padding: 6em 0 1em 0;
+  margin-top: 3.12rem !important;
+}
+
+#corso-iscrizione-section > p {
+  padding: 2rem 0;
+}
+
+.button-corso {
+  margin-top: -2.18rem;
+}
+
+.form-lg-corso {
+  position: absolute;
+}
+
+/*Media Query tablet - Corso */
+@media screen and (max-width: 992px) {
+  #header-il-corso {
+    background-position: top;
+    height: 60vh;
+  }
+
+  .form-lg-corso {
+    position: relative;
+  }
+
+  .button-corso {
+    margin-top: -0.6rem;
+    margin-left: -1.56rem !important;
+  }
+
+  .step-snippet-corso {
+    margin-left: -0.5rem;
+    padding-left: 3.12rem;
+    margin-right: 1.87rem;
+    padding-right: 1.87rem;
+  }
+}
+
+/*Media Query mobile - Corso */
+@media screen and (max-width: 576px) {
+  #header-il-corso {
+    background: none;
+    height: 80vh;
+  }
+
+  #corso-argoments-section {
+    margin-top: 22rem !important;
+    background: none;
+  }
+
+  #corso-argoments-section > p {
+    width: 40%;
+    padding: 2rem 0;
+  }
+
+  #corso-number-box {
+    padding: 0.9rem;
+  }
+
+  #corso-number-box > p {
+    width: 100%;
+  }
+
+  .step-snippet-corso {
+    left: 0;
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    margin-bottom: 2rem !important;
+  }
+
+
+
+  .form-lg-corso {
+    position: relative;
   }
 }
 
