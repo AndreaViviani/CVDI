@@ -219,6 +219,13 @@ h4 {
   color: #8183c3;
 }
 
+h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  color: #B5FF93;
+}
+
 p {
   color: white;
   font-size: 1rem;
@@ -326,6 +333,8 @@ button:focus {
   .only-tablet-display {
     display: block !important;
   }
+
+
 }
 
 @media screen and (max-width: 576px) {
@@ -361,6 +370,9 @@ button:focus {
   .only-mobile-display {
     display: block;
   }
+
+
+
 }
 
 /*NAVBAR/HEADER STYLES*/
@@ -505,6 +517,8 @@ div.dropdown-menu a {
   #collapse-button {
     padding-right: 0em;
   }
+
+
 }
 
 /*HOME STYLES and MAIN STYLES*/
@@ -801,6 +815,12 @@ div.dropdown-menu a {
   .helpus-overlay {
     height: 33vh;
   }
+
+  .padding-event-library {
+    padding-top: 2rem !important;
+    padding-bottom: 0rem !important;
+  }
+
 }
 
 /*Media Queries home mobile*/
@@ -874,6 +894,27 @@ div.dropdown-menu a {
     width: 10px;
     height: 10px;
     margin-bottom: 20px;
+  }
+
+  .padding-galaxy {
+    padding-top: 15rem !important;
+  }
+
+  .padding-next-event {
+    padding-top: 2rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  .padding-left-2 {
+    padding-left: 1rem;
+  }
+
+  .padding-library {
+    padding-top: 10rem !important;
+  }
+
+  #observations {
+    padding-top: 22rem !important;
   }
 }
 
@@ -1357,12 +1398,14 @@ useremo le stesse classi dove possibile:*/
 }
 
 .gallery-div {
-  background: url("img/archivio-img/snippet-gallery.png") no-repeat;
-  padding: 9rem 0 3rem 8rem;
-}
+   background: url("img/archivio-img/snippet-gallery.png") no-repeat;
+   padding: 9rem 0 3rem 8rem;
+ }
 .gallery-div p {
   padding: 2rem 0;
 }
+
+
 
 /*tablet media query archivio*/
 
@@ -1411,6 +1454,8 @@ useremo le stesse classi dove possibile:*/
   .gallery-div {
     padding: 5rem 0 5rem 3rem;
   }
+
+
 }
 
 @media screen and (max-width: 576px) {
@@ -2181,3 +2226,103 @@ img.arrow-news {
     width: 18%;
   }
 }
+
+/**********************PAGINA CONFERENZE***********************/
+
+#header-conference {
+  width: 100%;
+  height: 80vh;
+  background: url("img/conferenze_img/conf-header.png") rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: multiply;
+}
+
+#header-conference .container {
+  position: relative;
+  top: 15vh;
+}
+.header-conference-textbox p {
+  padding-top: 2rem;
+}
+
+#header-conference .container {
+  position: relative;
+  top: 22vh;
+}
+
+.galaxy-img{
+  height: 38.37rem;
+  width:44.18rem;
+}
+
+.subtitle-conference {
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.padding-galaxy {
+  padding-top: 4rem;
+}
+
+.padding-next-event {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+
+@media screen and (max-width: 992px) {
+  #header-conference {
+    height: 60vh;
+  }
+
+  #header-conference .container {
+    top: 15vh;
+  }
+}
+
+
+/****BIBLIOTECA******/
+
+.text-ul {
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+.text-ul li {
+  color: white;
+  line-height: 1.5rem;
+  list-style: disc;
+  font-size: 1rem;
+  padding-bottom:0.5rem
+}
+
+#library-div {
+  background: url("img/biblioteca_img/prestito-biblioteca.jpg") no-repeat;
+}
+
+
+@media (min-width: 992px) {
+  #library-div>.col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 49.333333%;
+  }
+}
+
+/*******SERATE OSSERVATIVE*************/
+
+.ul-no-disc {
+  padding-top: 2rem;
+}
+
+.ul-no-disc li {
+  color: white;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+
+
