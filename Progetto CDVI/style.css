@@ -2323,6 +2323,51 @@ img.arrow-news {
   font-size: 1rem;
   padding-bottom: 0.5rem;
 }
+/*INIZIO GALLERY*/
+.startingsection {
+  width: 100vw;
+  min-height: 60vh;
+}
+.rowgallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  max-width: 80%;
+  justify-content: space-around;
+  margin-left: 10%;
+}
+.columngallery {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
 
+.columngallery img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .columngallery {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .rowgallery {
+    position: relative;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .columngallery {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .rowgallery {
+    position: relative;
+    margin-top: 160px;
+  }
+}
 
 
