@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title></title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+            integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    <script rel="text/javascript" src="assets/events.js"></script>
+</head>
+
+<body class="dark-bkgr">
+<header>
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <a class="navbar-brand"><img src="img/loghi/onlylogo.png" alt="Logo di Astrosaf"><img class="nodisplay"
+                                                                                              src="img/loghi/onlylogo-white.png"
+                                                                                              alt="Logo Astrosaf bianco"></a>
+        <button class="navbar-toggler" id="collapse-button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <img id="close" class="burger-icon nodisplay" src="img/icons/icon-menu-close-Shapes4FREE.png"
+                 alt="Icona chiusura menù"/>
+            <img id="open" class="burger-icon" src="img/icons/icon-menu-burger-Shapes4FREE.png"
+                 alt="Icona burger menù"/>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="chi-siamo.html">Chi siamo</a>
+                </li>
+                <li class="navbar-item dropdown">
+                    <a class="nav-link dropdown-toggle arrow-drop" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sostienici</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="diventa-socio.html">Diventa socio</a>
+                        <a class="dropdown-item" href="dona.html">Dona</a>
+                    </div>
+                </li>
+                <li class="navbar-item dropdown">
+                    <a class="nav-link dropdown-toggle arrow-drop" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Attività</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="eventi.html">Eventi</a>
+                        <a class="dropdown-item" href="il-corso.html">Il corso di astronomia</a>
+                        <a class="dropdown-item" href="archivio.html">Archivio</a>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="contatti.html">Contatti</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section id="header-il-corso">
+        <div class="container row">
+            <div class="col-lg-7 nodisplay-m">
+
+            </div>
+            <div class="col-lg-5 col-sm-10 nodisplay-s">
+                <div class="il-corso-header-textbox centered-text-s">
+                    <h2 style="margin-top: 12.5rem">Il corso di Astronomia</h2>
+                    <p>Ogni anno la nostra società organizza un corso base dedicato a tutti coloro che vogliano
+                        approfondire le proprie conoscenze di astronomia. Il corso comprende un percorso di
+                        apprendimento sia teorico che pratico, con sessioni di osservazione guidata del cielo notturno
+                        attraverso i telescopi messi a disposizione dall’associazione e lezioni con l’uso del
+                        planetario. <br><br>
+                        Il corso dura circa un mese e mezzo – dal 22 ottobre al 3 dicembre - e per parteciparvi non è
+                        necessaria alcuna conoscenza pregressa, ma soltanto l’associazione alla Società Astronomica
+                        Fiorentina ed un contributo libero. Alla fine del corso verrà consegnato un Attestato di
+                        partecipazione.</p>
+                </div>
+            </div>
+            <div class="only-mobile-display">
+                <div class="il-corso-header-textbox centered-text-s">
+                    <h2 style="margin-top: 5rem">Il corso di Astronomia</h2>
+                    <p style="margin-left: 1.25rem; margin-right: 1.25rem">Ogni anno la nostra società organizza un
+                        corso base dedicato a tutti coloro che vogliano approfondire le proprie conoscenze di
+                        astronomia. Il corso comprende un percorso di apprendimento sia teorico che pratico, con
+                        sessioni di osservazione guidata del cielo notturno attraverso i telescopi messi a disposizione
+                        dall’associazione e lezioni con l’uso del planetario. <br><br>
+                        Il corso dura circa un mese e mezzo – dal 22 ottobre al 3 dicembre - e per parteciparvi non è
+                        necessaria alcuna conoscenza pregressa, ma soltanto l’associazione alla Società Astronomica
+                        Fiorentina ed un contributo libero. Alla fine del corso verrà consegnato un Attestato di
+                        partecipazione.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="corso-argoments-section" class="centered-text-s">
+        <div class="nodisplay-m nodisplay-s">
+            <div class="container">
+                <h3>Argomenti del corso</h3>
+                <section id="corso-number-box" class="container">
+                    <div class="row" style="margin-bottom: 5rem">
+                        <div class="col-lg-6">
+                            <p class="big-number "><span class="green-span">1</span></p>
+                            <div class="step-snippet-corso">
+                                <p>
+                                    <span style="color:#8183c3">Le basi del corso:</span> una panoramica per iniziare a
+                                    comprendere l’astronomia e lo spazio.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="big-number"><span class="green-span">2</span></p>
+                            <div class="step-snippet-corso">
+                                <p>
+                                    <span style="color:#8183c3">I moti del sistema solare:</span> alla scoperta del
+                                    sistema solare, i suoi pianeti e le forze che vi agiscono.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 5rem">
+                        <div class="col-lg-6">
+                            <p class="big-number "><span class="green-span">3</span></p>
+                            <div class="step-snippet-corso">
+                                <p>
+                                    <span style="color:#8183c3">Inventario della galassia:</span> in questa sezione
+                                    prenderemo in esame le tipologie di corpi finora scoperti che abitano la via lattea.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="big-number"><span class="green-span">4</span></p>
+                            <div class="step-snippet-corso">
+                                <p>
+                                    <span style="color:#8183c3">Cosmologia:</span> conosciamo l’universo e le ipotesi
+                                    sulla sua origine ed evoluzione.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="big-number"><span class="green-span">5</span></p>
+                            <div class="step-snippet-corso">
+                                <p>
+                                    <span style="color:#8183c3">Le basi dell’osservazione:</span> impariamo le basi per
+                                    osservare con criterio lo spazio ed i suoi abitanti.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="big-number"><span class="green-span">6</span></p>
+                            <div class="step-snippet-corso">
+                                <p>
+                                    <span style="color:#8183c3">Serata pratica di osservazione:</span> serata finale
+                                    sotto le stelle per mettere in pratica le competenze acquisite nel corso.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="only-tablet-display nodisplay-s nodisplay p-sm-5" style="padding-top: -12rem">
+            <h3 style="margin-bottom: 3rem">Argomenti del corso</h3>
+            <div class="row">
+                <div class="step-container">
+                    <div>
+                        <p class="big-number" style="left:1rem;"><span class="green-span">1</span></p>
+                        <div class="step-snippet">
+                            <p>
+                                <span style="color:#8183c3">Le basi del corso:</span> una panoramica per iniziare a
+                                comprendere l’astronomia e lo spazio.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="big-number" style="left:0.5rem;"><span class="green-span">2</span></p>
+                        <div class="step-snippet">
+                            <p>
+                                <span style="color:#8183c3">I moti del sistema solare:</span> alla scoperta del sistema
+                                solare, i suoi pianeti e le forze che vi agiscono.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="big-number" style="left:0.3rem;"><span class="green-span">3</span></p>
+                        <div class="step-snippet">
+                            <p>
+                                <span style="color:#8183c3">Inventario della galassia:</span> in questa sezione
+                                prenderemo in esame le tipologie di corpi finora scoperti che abitano la via lattea.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="big-number"><span class="green-span">4</span></p>
+                        <div class="step-snippet">
+                            <p>
+                                <span style="color:#8183c3">Cosmologia:</span> conosciamo l’universo e le ipotesi sulla
+                                sua origine ed evoluzione.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="big-number"><span class="green-span">5</span></p>
+                        <div class="step-snippet">
+                            <p>
+                                <span style="color:#8183c3">Le basi dell’osservazione:</span> impariamo le basi per
+                                osservare con criterio lo spazio ed i suoi abitanti.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="big-number"><span class="green-span">6</span></p>
+                        <div class="step-snippet">
+                            <p>
+                                <span style="color:#8183c3">Serata pratica di osservazione:</span> serata finale sotto
+                                le stelle per mettere in pratica le competenze acquisite nel corso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="only-mobile-display nodisplay-m nodisplay">
+            <h3 style="margin-bottom: 5rem" class="centered-text-s">Argomenti del corso</h3>
+            <div class="row">
+                <div class="step-container">
+                    <div style="margin-bottom: 4.3rem">
+                        <p class="big-number"><span class="green-span">1</span></p>
+                        <div class="step-snippet-corso">
+                            <p>
+                                <span style="color:#8183c3">Le basi del corso:</span> una panoramica per iniziare a
+                                comprendere l’astronomia e lo spazio.
+                            </p>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 4.3rem">
+                        <p class="big-number"><span class="green-span">2</span></p>
+                        <div class="step-snippet-corso">
+                            <p>
+                                <span style="color:#8183c3">I moti del sistema solare:</span> alla scoperta del sistema
+                                solare, i suoi pianeti e le forze che vi agiscono.
+                            </p>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 4.3rem">
+                        <p class="big-number"><span class="green-span">3</span></p>
+                        <div class="step-snippet-corso">
+                            <p>
+                                <span style="color:#8183c3">Inventario della galassia:</span> in questa sezione
+                                prenderemo in esame le tipologie di corpi finora scoperti che abitano la via lattea.
+                            </p>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 4.3rem">
+                        <p class="big-number"><span class="green-span">4</span></p>
+                        <div class="step-snippet-corso">
+                            <p>
+                                <span style="color:#8183c3">Cosmologia:</span> conosciamo l’universo e le ipotesi sulla
+                                sua origine ed evoluzione.
+                            </p>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 4.3rem">
+                        <p class="big-number"><span class="green-span">5</span></p>
+                        <div class="step-snippet-corso">
+                            <p>
+                                <span style="color:#8183c3">Le basi dell’osservazione:</span> impariamo le basi per
+                                osservare con criterio lo spazio ed i suoi abitanti.
+                            </p>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: -3.75rem">
+                        <p class="big-number"><span class="green-span">6</span></p>
+                        <div class="step-snippet-corso">
+                            <p>
+                                <span style="color:#8183c3">Serata pratica di osservazione:</span> serata finale sotto
+                                le stelle per mettere in pratica le competenze acquisite nel corso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="corso-iscrizione-section" class="container p-sm-5 nodisplay-s">
+        <h3>Iscriviti al corso</h3>
+        <p class="col-sm-12 m-m-2">
+            Per iscriverti al corso di astronomia inserisci i tuoi dati nel form qui sotto. <br> Una volta compilato
+            verrai contattato al più presto dal nostro staff
+        </p>
+    </section>
+
+    <section id="corso-iscrizione-section" class="container centered-text-s only-mobile-display">
+        <h3>Iscriviti al corso</h3>
+        <p class="centered-text-s">
+            Per iscriverti al corso di astronomia inserisci i tuoi dati nel form qui sotto. Una volta compilato verrai
+            contattato al più presto dal nostro staff
+        </p>
+    </section>
+
+    <section id="form-corso-section">
+        <div class="container row">
+            <div class="col-lg-12 order-lg-2 nodisplay-s" style="padding-right: -4.3rem">
+                <img src="img/corso_img/form.jpg" class="nodisplay-s nodisplay-m" alt="doppia galassia" style="position: relative"/>
+            </div>
+            <div class="col-lg-4 col-sm-8 order-lg-1 m-m-4 m-lg-4 form-lg-corso">
+                <form class="contact-form">
+                    <label><span class="purple-span">NOME E COGNOME</span></label><br/>
+                    <input type="text" name="nome_cognome" placeholder="Mario Rossi"/><br/>
+                    <label><span class="purple-span">INDIRIZZO E-MAIL</span></label><br/>
+                    <input type="text" name="e-mail" placeholder="mariorossi@gmail.com"/><br/>
+                    <label><span class="purple-span">NUMERO DI TELEFONO</span></label><br/>
+                    <input type="text" name="number" placeholder="3455789006"/><br/>
+                    <label for="gridCheck" class="check-label" style="color: #8183c3; "><input type="checkbox"
+                                                                                               style="width:inherit; margin-right:1rem;"
+                                                                                               id="gridCheck">CONFERMO
+                        DI AVER LETTO L'INFORMATIVA SULLA PRIVACY</label>
+
+                    <div class="centered-text-s">
+                        <button class="main-button" type="submit">Invio</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <div class="newsletter-div centered-text-s"
+                 style="background: url('img/corso_img/newsletter.jpg') no-repeat; background-position: top">
+                <h2><span class="white-span">Iscriviti alla newsletter</span></h2>   <br/>
+                <span class="nodisplay-s"><h4>INDIRIZZO E-MAIL</h4></span>
+                <form class="newsletter-form " action="mailto:blabla">
+                    <input type="text" name="email" placeholder="mariorossi@gmail.com"/>
+                    <button class="main-button" type="submit">Invio</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <img class="footer-logo" src="img/loghi/logo.png" alt="Logo di Astrosaf">
+        <div class="row">
+            <div class="col-lg-4 footer-section">
+                <p class="footer-description">Astrosaf è un'associazione culturale il cui obiettivo è la
+                    divulgazione di una disciplina in grado di
+                    far sognare sia bambini che adulti: l'astronomia. Il tuo aiuto permetterà di proseguire le
+                    attività
+                    e dare vita a nuove iniziative.
+                </p>
+                <button class="main-button footer-dona-button"><a href="dona.html">Dona</a></button>
+            </div>
+            <div class="col-lg-4 footer-section">
+                <h4>CONTATTI</h4>
+                <p class="footer-contact-text">
+                    +39 377 1273573 dalle 10:00 alle 20:00 <br/>
+                    astrosaf@astrosaf.it <br/>
+                    Istituto Istruzione Superiore “A.M. E. Agnoletti”, via Ragionieri, 47 – 50019 Sesto Fiorentino
+                    (FI)
+                </p>
+                <a class="policy-link">Privacy policy</a>
+            </div>
+            <div class="col-lg-4 footer-section">
+                <h4>SOCIAL MEDIA</h4>
+                <div class="footer-social-container">
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/cosmobfcspace/"><img class="social-icon"
+                                                                                src="img/icons/instagram.png"
+                                                                                alt="Icona Instagram"></a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://twitter.com/Cosmobfcspace"><img class="social-icon"
+                                                                         src="img/icons/twitter.png"
+                                                                         alt="Icona Twitter"></a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/cosmobfcspace/"><img class="social-icon"
+                                                                               src="img/icons/facebook.png"
+                                                                               alt="Icona Facebook"></a>
+                    </div>
+                </div>
+                <div class="form-container-footer">
+                    <form method="post" action="">
+                        <input class="news-input-footer" type="text" name="newsletter-email"
+                               placeholder="esempio@dominio.it"/>
+                        <button type="submit" class="submit-newsletter">
+                            <img class="arrow-news" src="img/icons/arrow-newsletter-footer.svg"
+                                 alt="Icona freccia"/>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <a class="policy-link policy-link-mobile" href="FILE PDF">Privacy policy</a>
+        </div>
+    </div>
+</footer>
+<script>//toggle menu jquery
+
+
+jQuery(document).ready(function ($) {
+
+
+    var myDropdown = document.getElementById('navbarSupportedContent');
+
+    $("#navbarSupportedContent").on('hide.bs.collapse', function () {
+        $('#navbar').removeClass('purple-bkgr');
+        $('.navbar-item').removeClass('expanded-nav-item');
+        $('.navbar-collapse').addClass('collapsing');
+        $('.nav-link').removeClass('expanded-nav-link');
+        $('.dropdown-item').removeClass('expanded-nav-subitem');
+        $('.dropdown-toggle').addClass('arrow-drop');
+        $('#close').addClass('nodisplay');
+        $('#open').removeClass('nodisplay');
+        $(".navbar-brand img").toggleClass("nodisplay");
+    })
+
+    $("#navbarSupportedContent").on('show.bs.collapse', function () {
+        $('#navbar').addClass('purple-bkgr');
+        $('.navbar-item').addClass('expanded-nav-item');
+        $('.nav-link').addClass('expanded-nav-link');
+        $('.dropdown-item').addClass('expanded-nav-subitem');
+        $('.dropdown-toggle').removeClass('arrow-drop');
+        $('#open').addClass('nodisplay');
+        $('#close').removeClass('nodisplay');
+        $(".navbar-brand img").toggleClass("nodisplay");
+    })
+
+
+});
+
+
+</script>
+
+</body>
+</html>

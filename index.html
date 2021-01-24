@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title></title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+            integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    <script rel="text/javascript" src="assets/events.js"></script>
+</head>
+
+<body class="dark-bkgr">
+<header>
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <a class="navbar-brand"><img src="img/loghi/onlylogo.png" alt="Logo di Astrosaf"><img class="nodisplay"
+                                                                                              src="img/loghi/onlylogo-white.png"
+                                                                                              alt="Logo Astrosaf bianco"></a>
+        <button class="navbar-toggler" id="collapse-button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <img id="close" class="burger-icon nodisplay" src="img/icons/icon-menu-close-Shapes4FREE.png"
+                 alt="Icona chiusura menù"/>
+            <img id="open" class="burger-icon" src="img/icons/icon-menu-burger-Shapes4FREE.png"
+                 alt="Icona burger menù"/>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="chi-siamo.html">Chi siamo</a>
+                </li>
+                <li class="navbar-item dropdown">
+                    <a class="nav-link dropdown-toggle arrow-drop" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sostienici</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="diventa-socio.html">Diventa socio</a>
+                        <a class="dropdown-item" href="dona.html">Dona</a>
+                    </div>
+                </li>
+                <li class="navbar-item dropdown">
+                    <a class="nav-link dropdown-toggle arrow-drop" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Attività</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="eventi.html">Eventi</a>
+                        <a class="dropdown-item" href="il-corso.html">Il corso di astronomia</a>
+                        <a class="dropdown-item" href="archivio.html">Archivio</a>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="contatti.html">Contatti</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section id="astronauta-section-home">
+        <div class="container row">
+            <div class="col-lg-6 d-flex">
+                <div class="first-home-textbox centered-text-s">
+                    <h1>Scopri lo spazio insieme ad Astrosaf</h1>
+                    <p class="under-title-text">
+                        Approfondisci la tua passione per lo spazio insieme a noi. Tra eventi e corsi confrontati
+                        con il
+                        parere di esperti, migliora le tue conoscenze e mettile a disposizione degli altri.
+                        </br>
+                        <span class="purple-span">Osserva, scopri, impara!</span>
+
+                    </p>
+                    <a href="chi-siamo.html"> <button class="main-button ">
+                        Chi siamo
+                    </button></a>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex">
+                <img class="astronauta nodisplay-s" src="img/index_img/astronauta.png"
+                     alt="Astronauta che fluttua nello spazio"/>
+            </div>
+            <div class="scroll-icon-div">
+                <a href="#joinus-section-home"><img class="scroll-icon nodisplay-m" src="img/icons/scroll-icon.png"
+                                                    alt="Icona di scroll"/></a>
+            </div>
+        </div>
+    </section>
+    <section id="joinus-section-home" class="container">
+        <div class="row">
+            <div class="col-lg-6 secondary-text-box centered-text-s">
+                <h2>Unisciti a noi e impara a conoscere il cielo</h2>
+                <p>
+                    Quotidianamente aggiorniamo gli eventi a cui potrete partecipare presso la nostra sede. Tra
+                    conferenze, apertura della biblioteca e del planetario e serate dedicate ai soci, agli
+                    approfondimenti e alle osservazioni, lasciati incuriosire dalla tua passione e approfondiscila
+                    insieme a noi.<span class="purple-span"> Scopri di più sui nostri eventi.</span>
+
+                </p>
+                <a href="eventi.html"><button class="main-button">
+                    Eventi
+                </button></a>
+            </div>
+        </div>
+    </section>
+    <section id="home-nextevent-section">
+        <div class="container">
+            <h2 class="nodisplay-s">
+                Prossimi eventi
+            </h2>
+        </div>
+        <div class="carousel-container">
+            <ul class="list">
+                <li class="hide" class="slide3">
+                    <div class="row h-100">
+                        <div class="col-sm-6 p-0 nodisplay-s">
+                            <img class="carousel-img " src="img/index_img/evento-home.jpg" alt="Evento notte stellata">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-container-carousel">
+                                <p class="pt-2 pb-2">
+                                    CONFERENZA
+                                </p>
+                                <h3 class=" text-white pt-2 pb-2">
+                                    Modelli di universo nella storia
+                                </h3>
+                                <p class="pt-2 pb-2 home-event-descr">
+                                    Nel corso della storia l’uomo ha cercato di capire come è fatto l’Universo. Col
+                                    passare del tempo la scienza ha iniziato a rispondere al posto della mitologia,
+                                    ma il modello che ci offre adesso è veramente quello definitivo ?
+                                </p>
+                                <div>
+                                    <div class="mb-3 mt-3">
+                                        <img class="event-home-icon" src="img/icons/clock.png" alt="Icona orologio">
+                                        <p class="d-inline ">21:00 - 23:00</p>
+                                    </div>
+
+                                    <div class="mb-3 mt-3">
+                                        <img class="event-home-icon" src="img/icons/date.png" alt="Icona calendario">
+                                        <p class="d-inline ">Martedì 1 dicembre</p>
+                                    </div>
+                                </div>
+
+                                <a href="eventi.html"><button class="secondary-button mt-4 mb-4">
+                                    Invio
+                                </button></a>
+                            </div>
+                        </div>
+                </li>
+                <li class="prev" class="slide1">
+                    <div class="row h-100">
+                        <div class="col-sm-6 p-0 nodisplay-s">
+                            <img class="carousel-img " src="img/index_img/evento-home.jpg" alt="Evento notte stellata">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-container-carousel">
+                                <p class="pt-2 pb-2">
+                                    CONFERENZA
+                                </p>
+                                <h3 class=" text-white pt-2 pb-2">
+                                    Modelli di universo nella storia
+                                </h3>
+                                <p class="pt-2 pb-2 home-event-descr">
+                                    Nel corso della storia l’uomo ha cercato di capire come è fatto l’Universo. Col
+                                    passare del tempo la scienza ha iniziato a rispondere al posto della mitologia,
+                                    ma il modello che ci offre adesso è veramente quello definitivo ?
+                                </p>
+                                <div>
+                                    <div class="mb-3 mt-3">
+                                        <img class="event-home-icon" src="img/icons/clock.png" alt="Icona orologio">
+                                        <p class="d-inline ">21:00 - 23:00</p>
+                                    </div>
+
+                                    <div class="mb-3 mt-3">
+                                        <img class="event-home-icon" src="img/icons/date.png" alt="Icona calendario">
+                                        <p class="d-inline ">Martedì 1 dicembre</p>
+                                    </div>
+                                </div>
+
+                                <a href="eventi.html"><button class="secondary-button mt-4 mb-4">
+                                    Invio
+                                </button></a>
+                            </div>
+                        </div>
+                </li>
+                <li class="act" class="slide2">
+                    <div class="row h-100">
+                        <div class="col-sm-6 p-0 nodisplay-s">
+                            <img class="carousel-img " src="img/index_img/evento-home.jpg" alt="Evento notte stellata">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-container-carousel">
+                                <p class="pt-2 pb-2">
+                                    CONFERENZA
+                                </p>
+                                <h3 class=" text-white pt-2 pb-2">
+                                    Modelli di universo nella storia
+                                </h3>
+                                <p class="pt-2 pb-2 home-event-descr">
+                                    Nel corso della storia l’uomo ha cercato di capire come è fatto l’Universo. Col
+                                    passare del tempo la scienza ha iniziato a rispondere al posto della mitologia,
+                                    ma il modello che ci offre adesso è veramente quello definitivo ?
+                                </p>
+                                <div>
+                                    <div class="mb-3 mt-3">
+                                        <img class="event-home-icon" src="img/icons/clock.png" alt="Icona orologio">
+                                        <p class="d-inline ">21:00 - 23:00</p>
+                                    </div>
+
+                                    <div class="mb-3 mt-3">
+                                        <img class="event-home-icon" src="img/icons/date.png" alt="Icona calendario">
+                                        <p class="d-inline ">Martedì 1 dicembre</p>
+                                    </div>
+                                </div>
+
+                                <a href="eventi.html"><button class="secondary-button mt-4 mb-4">
+                                    Invio
+                                </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="next" class="slide3">
+                    <div class="row h-100">
+                        <div class="col-sm-6 p-0 nodisplay-s">
+                            <img class="carousel-img " src="img/index_img/evento-home.jpg" alt="Evento notte stellata">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-container-carousel">
+                                <p class="pt-2 pb-2">
+                                    CONFERENZA
+                                </p>
+                                <h3 class=" text-white pt-2 pb-2">
+                                    Modelli di universo nella storia
+                                </h3>
+                                <p class="pt-2 pb-2 home-event-descr">
+                                    Nel corso della storia l’uomo ha cercato di capire come è fatto l’Universo. Col
+                                    passare del tempo la scienza ha iniziato a rispondere al posto della mitologia,
+                                    ma il modello che ci offre adesso è veramente quello definitivo ?
+                                </p>
+                                <div>
+                                    <div class="mb-3 mt-3">
+                                        <img class="event-home-icon" src="img/icons/clock.png" alt="Icona orologio">
+                                        <p class="d-inline ">21:00 - 23:00</p>
+                                    </div>
+
+                                    <div class="mb-3 mt-3">
+                                        <img class="event-home-icon" src="img/icons/date.png" alt="Icona calendario">
+                                        <p class="d-inline ">Martedì 1 dicembre</p>
+                                    </div>
+                                </div>
+
+                                <a href="eventi.html"><button class="secondary-button mt-4 mb-4">
+                                    Invio
+                                </button></a>
+                            </div>
+                        </div>
+                </li>
+                <li class="next new-next" class="slide1">
+                    <div class="row h-100">
+                        <div class="col-sm-6 p-0 nodisplay-s">
+                            <img class="carousel-img " src="img/index_img/evento-home.jpg" alt="Evento notte stellata">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-container-carousel">
+                                <p class="pt-2 pb-2">
+                                    CONFERENZA
+                                </p>
+                                <h3 class=" text-white pt-2 pb-2">
+                                    Modelli di universo nella storia
+                                </h3>
+                                <p class="pt-2 pb-2 home-event-descr">
+                                    Nel corso della storia l’uomo ha cercato di capire come è fatto l’Universo. Col
+                                    passare del tempo la scienza ha iniziato a rispondere al posto della mitologia,
+                                    ma il modello che ci offre adesso è veramente quello definitivo ?
+                                </p>
+                                <div>
+                                    <div class="mb-3 mt-3">
+                                        <img class="event-home-icon" src="img/icons/clock.png" alt="Icona orologio">
+                                        <p class="d-inline ">21:00 - 23:00</p>
+                                    </div>
+
+                                    <div class="mb-3 mt-3">
+                                        <img class="event-home-icon" src="img/icons/date.png" alt="Icona calendario">
+                                        <p class="d-inline ">Martedì 1 dicembre</p>
+                                    </div>
+                                </div>
+
+                                <a href="eventi.html"><button class="secondary-button mt-4 mb-4">
+                                    Invio
+                                </button></a>
+                            </div>
+                        </div>
+                </li>
+            </ul>
+            <div class="triggerPrev">
+            </div>
+            <div class="triggerNext">
+            </div>
+        </div>
+        <div class="slider-dot-div">
+            <div class="slider-dot triggerDotPrev">
+
+            </div>
+            <div class="slider-dot centralDot">
+
+            </div>
+            <div class="slider-dot triggerDotNext">
+
+            </div>
+        </div>
+    </section>
+    <section id="home-help-us-section">
+        <div class="helpus-overlay nodisplay-s"></div>
+        <div class="container row">
+            <div class="col-lg-6 nodisplay-m">
+                <img src="img/index_img/sostienici-home.jpg" alt="Stelle notturne" class="help-img"/>
+            </div>
+            <div class="col-lg-6">
+                <div class="helpus-textbox centered-text-s">
+                    <h2>Il tuo aiuto è prezioso</h2>
+                    <p>Le donazioni sono molto importanti per la nostra associazione per migliorare le nostre
+                        attrezzature e strutture, messe a disposizione di tutti gli associati. La nostra
+                        associazione si impegna a tenere aggiornata la comunità sugli sviluppi realizzabili grazie
+                        al vostro aiuto.
+                    </p>
+
+                    <a href="BOH"><button class="main-button">
+                        Dona ora
+                    </button></a>
+                    <a href="dona.html"><button class="secondary-button">
+                        Sostienici
+                    </button></a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <img class="footer-logo" src="img/loghi/logo.png" alt="Logo di Astrosaf">
+        <div class="row">
+            <div class="col-lg-4 footer-section">
+                <p class="footer-description">Astrosaf è un'associazione culturale il cui obiettivo è la
+                    divulgazione di una disciplina in grado di
+                    far sognare sia bambini che adulti: l'astronomia. Il tuo aiuto permetterà di proseguire le
+                    attività
+                    e dare vita a nuove iniziative.
+                </p>
+                <button class="main-button footer-dona-button"><a href="dona.html">Dona</a></button>
+            </div>
+            <div class="col-lg-4 footer-section">
+                <h4>CONTATTI</h4>
+                <p class="footer-contact-text">
+                    +39 377 1273573 dalle 10:00 alle 20:00 <br/>
+                    astrosaf@astrosaf.it <br/>
+                    Istituto Istruzione Superiore “A.M. E. Agnoletti”, via Ragionieri, 47 – 50019 Sesto Fiorentino
+                    (FI)
+                </p>
+                <a class="policy-link">Privacy policy</a>
+            </div>
+            <div class="col-lg-4 footer-section">
+                <h4>SOCIAL MEDIA</h4>
+                <div class="footer-social-container">
+                        <div class="footer-social">
+                            <a href="https://www.instagram.com/cosmobfcspace/"><img class="social-icon"
+                                                                                    src="img/icons/instagram.png"
+                                                                                    alt="Icona Instagram"></a>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://twitter.com/Cosmobfcspace"><img class="social-icon"
+                                                                                    src="img/icons/twitter.png"
+                                                                                    alt="Icona Twitter"></a>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/cosmobfcspace/"><img class="social-icon"
+                                                                                    src="img/icons/facebook.png"
+                                                                                    alt="Icona Facebook"></a>
+                        </div>
+                </div>
+                <div class="form-container-footer">
+                    <form method="post" action="">
+                        <input class="news-input-footer" type="text" name="newsletter-email"
+                               placeholder="esempio@dominio.it"/>
+                        <button type="submit" class="submit-newsletter">
+                            <img class="arrow-news" src="img/icons/arrow-newsletter-footer.svg"
+                                 alt="Icona freccia"/>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <a class="policy-link policy-link-mobile" href="FILE PDF">Privacy policy</a>
+        </div>
+    </div>
+</footer>
+<script>//toggle menu jquery
+
+
+jQuery(document).ready(function ($) {
+
+
+    var myDropdown = document.getElementById('navbarSupportedContent');
+
+    $("#navbarSupportedContent").on('hide.bs.collapse', function () {
+        $('#navbar').removeClass('purple-bkgr');
+        $('.navbar-item').removeClass('expanded-nav-item');
+        $('.navbar-collapse').addClass('collapsing');
+        $('.nav-link').removeClass('expanded-nav-link');
+        $('.dropdown-item').removeClass('expanded-nav-subitem');
+        $('.dropdown-toggle').addClass('arrow-drop');
+        $('#close').addClass('nodisplay');
+        $('#open').removeClass('nodisplay');
+        $(".navbar-brand img").toggleClass("nodisplay");
+    })
+
+    $("#navbarSupportedContent").on('show.bs.collapse', function () {
+        $('#navbar').addClass('purple-bkgr');
+        $('.navbar-item').addClass('expanded-nav-item');
+        $('.nav-link').addClass('expanded-nav-link');
+        $('.dropdown-item').addClass('expanded-nav-subitem');
+        $('.dropdown-toggle').removeClass('arrow-drop');
+        $('#open').addClass('nodisplay');
+        $('#close').removeClass('nodisplay');
+        $(".navbar-brand img").toggleClass("nodisplay");
+    })
+
+
+});
+
+
+</script>
+<script> //carousel script
+
+jQuery.noConflict();
+
+const $ = selector => {
+    return document.querySelector(selector);
+};
+
+var pre;
+var actual;
+var nex;
+
+function next() {
+
+
+    if ($(".hide")) {
+        $(".hide").remove();
+    }
+
+    /* Step */
+
+    if ($(".prev")) {
+        $(".prev").classList.add("hide");
+        $(".prev").classList.remove("prev");
+    }
+
+    $(".act").classList.add("prev");
+    $(".act").classList.remove("act");
+
+    $(".next").classList.add("act");
+    $(".next").classList.remove("next");
+
+    /* New Next */
+
+    $(".new-next").classList.remove("new-next");
+
+    const addedEl = document.createElement('li');
+
+    var list = $('.list');
+
+    list.appendChild(addedEl);
+    addedEl.classList.add("next", "new-next");
+
+    pre = document.getElementsByClassName('prev')[0].innerHTML;
+
+    addedEl.innerHTML = pre;
+
+}
+
+function prev() {
+
+    /* Step */
+    $(".new-next").remove();
+
+    $(".next").classList.add("new-next");
+
+    $(".act").classList.add("next");
+    $(".act").classList.remove("act");
+
+    $(".prev").classList.add("act");
+    $(".prev").classList.remove("prev");
+
+    /* New Prev */
+
+    $(".hide").classList.add("prev");
+    $(".hide").classList.remove("hide");
+
+    const addedEl = document.createElement('li');
+
+    $(".list").insertBefore(addedEl, $(".list").firstChild);
+    addedEl.classList.add("hide");
+
+    var nexArr = document.getElementsByClassName('next');
+
+    for (item of nexArr) {
+        if (!item.classList.contains('new-next')) {
+            nex = item.innerHTML;
+        }
+    }
+
+    addedEl.innerHTML = nex;
+}
+
+jQuery(document).ready(function ($) {
+    $('.triggerNext').on('click', next);
+    $('.triggerPrev').on('click', prev);
+    $('.triggerDotNext').on('click', next);
+    $('.triggerDotPrev').on('click', prev);
+});
+
+
+</script>
+<script> //this script fill carousel content with lasta events from assets/events.js
+//this simulates the action to retrieve dinamically information from a json db and render the next events
+
+
+</script>
+</body>
+
+</html>
